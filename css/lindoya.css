@@ -19,6 +19,7 @@ ul, ol, p{
 body{
   background-image: url('../assets/images/hero-bg-2.png');
   background-repeat: repeat-x;
+  background-color: #F5F5F5;
 }
 .nav{
   padding-top: 25px;
@@ -172,11 +173,13 @@ body{
 }
 .banner img{
   margin: auto;
+  margin-top:-50px;
 }
 .tradicional{
   text-align: right;
   display: flex;
   justify-content: flex-end;
+  margin-bottom: 100px;
 }
 .sense{
   background-image: url('../assets/images/sense-circle.png');
@@ -218,10 +221,12 @@ body{
   background-position: right top;
   background-size: auto;
   background-size: 11vw;
+  margin-bottom: 100px;
 }
 
 .thermal{
   text-align: center;
+  margin-bottom: 100px;
 }
 .thermal img{
   width: 100%;
@@ -250,7 +255,7 @@ body{
   padding:100px;
 }
 .last .last__content .last__content__description{
-  margin-top:50px;
+  padding-bottom:400px;
   color:#707070;
   font-weight: 400;
   font-size:12pt;
@@ -269,7 +274,10 @@ body{
   display: flex;
   width: 100%;
   justify-content: space-between;
-  padding:150px 0;
+  overflow: auto;
+  padding-top: 70px;
+  padding-bottom: 70px;
+  margin: 0;
 }
 .catalog-water .catalog-water__list--item--base-image{
   height:230px;
@@ -283,13 +291,16 @@ body{
   width: auto;
 }
 .catalog-water .catalog-water__list--item{
-  width: 200px;
+  flex-basis: 300px;
+  flex-grow: 0;
+  flex-shrink: 0;
 }
 .catalog-water .catalog-water__list--item h4{
   font-weight: bold;
   text-align: left;
   color: #ef7d00;
   font-size:14px;
+  text-align: center;
 }
 .catalog-water .catalog-water__list--item p{
   font-weight: 200;
@@ -298,10 +309,11 @@ body{
   color: #707070;
   font-size:12px;
   white-space: pre-wrap;
+  text-align: center;
 }
 
 .catalog-water .catalog-water__list--item--01 img{
-  height: 150px;
+  height: 200px;
 }
 .catalog-water .catalog-water__list--item--02 img{
   height: 230px;
@@ -336,10 +348,10 @@ body{
 }
 
 .catalog-water .catalog-water__list--item--speciali--01 img{
-  height: 150px;
+  height: 190px;
 }
 .catalog-water .catalog-water__list--item--speciali--02 img{
-  height: 150px;
+  height: 220px;
 }
 .catalog-water .catalog-water__list--item--speciali--03 img{
   height: 280px;
@@ -415,21 +427,6 @@ body{
 }
 
 @media screen and (max-width: 800px) {
-  .catalog-water .catalog-water__list{
-    flex-direction: column;
-  }
-  .catalog-water .catalog-water__list .catalog-water__list--item{
-    margin: auto;
-  }
-  .catalog-water .catalog-water__list .catalog-water__list--item img{
-    max-height: 200px;
-  }
-  .catalog-water .catalog-water__list .catalog-water__list--item h4{
-    text-align: center;
-  }
-  .catalog-water .catalog-water__list .catalog-water__list--item p{
-    text-align: center;
-  }
 
   .mobile{
     display: block;
@@ -443,12 +440,14 @@ body{
 
   .kids img{
     width: 100%;
+    margin-bottom: 100px;
   }
   .fitness img{
     width: 100% ;
   }
   .rosa img{
     width: 100%;
+    margin-bottom: 100px;
   }
   .last .last__content{
     padding: 0;
@@ -464,9 +463,63 @@ body{
   }
   .last{
     height:1700px;
-    background-image: url('../assets/images/last_background_mobile.png');
+    background-image: url('../assets/images/detail-last.png');
     background-repeat: no-repeat;
-    background-color: #F6F6F5;
+    background-position: 0px 40px;
+    
     background-size: 100%;
   }
+  .last_background{
+    background-image: url('../assets/images/background-last.png');
+    background-position: bottom;
+    background-repeat: no-repeat;
+  }
+  .footer{
+    padding-top: 70px !important;
+    height:500px !important;
+  }
+  .footer__links{
+    flex-direction: column !important;
+    margin-top:10px !important;
+  }
+  .footer__links li{
+    border-bottom: 1px solid #33537F;
+    line-height: 70px;
+    text-align: center;
+  }
+  .footer__networks{
+    margin-top:30px;
+    text-align: center;
+  }
+  .footer__networks__list{
+    justify-content: center !important
+  }
+  .footer__networks__title{
+    text-align: center;
+  }
+  .footer .footer__links li a{
+    color:#FFF !important;
+    text-decoration:  none;
+    margin-right: 0px !important;
+  }
+
+  .catalog-water .container{
+    padding: 0 !important;
+  }
+  .catalog-water__list--item--thernal--00{
+    display: block !important;
+  }
+  .catalog-water__list--item--suporte--00{
+    display: block !important;
+  }
+}
+.catalog-water .container{
+  padding: 0 !important;
+  max-width: 100%;
+}
+.catalog-water__list--item--thernal--00{
+  display: none ;
+}
+.catalog-water__list--item--suporte--00{
+  display: none;
 }
