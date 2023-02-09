@@ -7,6 +7,7 @@ window.onload = () => {
     }else{
       navMobileList.classList.remove('nav__mobile__list__open')
     }
-    
   })
+
+  document.querySelector('img').setAttribute('draggable', false);
 }
