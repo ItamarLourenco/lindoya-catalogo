@@ -10,6 +10,12 @@ ul, ol, p{
   margin:0;
   padding:0;
 }
+.mobile{
+  display: none;
+}
+.desktop{
+  display: block;
+}
 body{
   background-image: url('../assets/images/hero-bg-2.png');
   background-repeat: repeat-x;
@@ -162,9 +168,15 @@ body{
 .banner{
   text-align: center;
   margin-top:100px;
+  
+}
+.banner img{
+  margin: auto;
 }
 .tradicional{
   text-align: right;
+  display: flex;
+  justify-content: flex-end;
 }
 .sense{
   background-image: url('../assets/images/sense-circle.png');
@@ -178,7 +190,10 @@ body{
 
 .fitness{
   text-align: right;
+  display: flex;
+  justify-content: flex-end;
 }
+
 
 .speciali{
   background-image: url('../assets/images/speciali-detail.png');
@@ -188,10 +203,13 @@ body{
 }
 
 .kids{
-
+  text-align: center;
 }
+
 .rosa{
   text-align: right;
+  display: flex;
+  justify-content: flex-end;
 }
 
 .big{
@@ -208,10 +226,15 @@ body{
 .thermal img{
   width: 100%;
 }
+.galao img{
+  text-align: center;
+  width: 100%;
+}
 
 .last{
   height:1400px;
   background-image: url('../assets/images/last-background.png');
+  background-repeat: no-repeat;
   background-color: #F6F6F5;
   background-size: 100%;
 }
@@ -406,5 +429,44 @@ body{
   }
   .catalog-water .catalog-water__list .catalog-water__list--item p{
     text-align: center;
+  }
+
+  .mobile{
+    display: block;
+  }
+  .desktop{
+    display: none;
+  }
+  .sense{
+    background-image: none;
+  }
+
+  .kids img{
+    width: 100%;
+  }
+  .fitness img{
+    width: 100% ;
+  }
+  .rosa img{
+    width: 100%;
+  }
+  .last .last__content{
+    padding: 0;
+    flex-direction: column;
+  }
+  .last .last__content .last__content__logo {
+    width: 100%;
+    padding: 100px;
+    padding-top: 160px;
+  }
+  .last .last__content__description{
+    padding:30px;
+  }
+  .last{
+    height:1700px;
+    background-image: url('../assets/images/last_background_mobile.png');
+    background-repeat: no-repeat;
+    background-color: #F6F6F5;
+    background-size: 100%;
   }
 }
